@@ -49,6 +49,53 @@ img {
   .flex-hijos {
     width: calc((100% / 2) - 15px);
   }
+
+  .flex-container {
+    display: flex;
+  }
+
+  header .flex-container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #section-1 .flex-container {
+    flex-direction: column;
+    padding-right: 100px;
+  }
+
+  #section-2 .flex-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .flex-hijos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #section-3 .flex-container {
+    justify-content: space-between;
+  }
+
+  #section-3 .text-container {
+    margin-left: 30px;
+  }
+
+  footer .flex-container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .legales,
+  footer .redes {
+    width: calc((100% / 2) - 15px);
+  }
+
+  .redes {
+    text-align: right;
+  }
 }
 
 /* 1- Crear media query para que los estilos flexbox solo se apliquen
